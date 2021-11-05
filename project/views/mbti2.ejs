@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI - first</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/defult.css">
+    <link rel="stylesheet" href="css/mbti.css">
+</head>
+
+
+<body>
+    <header>
+        <%- include('header.ejs') -%>
+    </header>
+
+    <!------------------------------------------ START---------------------------------->
+    <div class="total-band">
+        <div class="mbti-comment">
+            <h1>What kind of alcohol do you usually like?</h1>
+            <span>Click on the type of alcohol! We will recommend a traditional Korean liquor to suit your taste.</span>
+        </div>
+
+        <form action="">
+            <div class="mbti-content">
+                <div class="mbti-drink">
+                    <input type="button" id="choice-first" value="Vodka">
+                    <input type="button" id="choice-second" value="Wine">
+                    <input type="button" id="choice-third" value="Beer">
+                    <div class="choice-first"><img src="../img/mbti/보드카.png"></div>
+                    <div class="choice-second"><img src="../img/mbti/와인.png"></div>
+                    <div class="choice-third"><img src="../img/mbti/맥주.png"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!------------------------------------------- END ----------------------------------->
+
+    <!-- footer -->
+    <%- include('footer.ejs') -%>
+
+</body>
+<script src="../js/header-footer.js" defer type="text/javascript"></script>
+</html>

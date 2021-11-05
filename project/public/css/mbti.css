@@ -1,0 +1,162 @@
+.total-band{
+    height: 100%;
+    margin: 100px 300px 20px 300px;
+}
+
+/* mbti 제목 */
+.mbti-comment{
+    width: auto;
+    height: 100px;
+}
+
+.mbti-comment > h1{
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.mbti-comment > span{
+    font-size: 25px;
+    color: #444;
+}
+
+/* 버튼 */
+div[class="mbti-content"]{
+    margin:0 auto;
+}
+div[class="mbti-content"] input{
+    background-color:white;
+    border:1px solid #a33333;
+    width:400px;
+    height:50px;
+    margin-bottom:30px;
+    font-size:24px;
+}
+div[class="mbti-content"] input:hover{
+    background-color:#A33333;
+    color:white;
+}
+input[id="choice-first"]:hover ~ .choice-first{
+    opacity: 1;
+}
+input[id="choice-second"]:hover ~ .choice-second{
+    opacity: 1;
+}
+input[id="choice-third"]:hover ~ .choice-third{
+    opacity: 1;
+}
+/* 선택해야하는 것 */
+.mbti-choice, .mbti-soju, .mbti-drink{
+    display: flex;
+    width: 1320px;
+    height: 450px;
+    padding-top: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.choice-first{
+    opacity: 0.5;
+    width: 300px;
+    height: 300px;
+}
+
+.choice-first:hover{
+    opacity: 1;
+}
+
+
+.choice-second{
+    opacity: 0.5;
+    width: 300px;
+    height: 300px;
+}
+.choice-second:hover{
+    opacity: 1;
+}
+
+.choice-third{
+    opacity: 0.5;
+    width: 300px;
+    height: 300px;
+}
+.choice-third:hover{
+    opacity: 1;
+}
+
+
+.mbti-drink{
+    display: flex;
+    width: auto;
+    height: 450px;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+/* 와인 크기만 변경 */
+.mbti-drink .choice-second{
+    width: 259px !important;
+    padding-top: 26px !important;
+}
+
+/* 소주들 크기 변경 */
+div[class="mbti-soju"] div img{
+    width:300px;
+    height:300px;
+}
+
+
+/* mbti 결과 css */
+div[class="mbti-result"]{
+    margin-top:50px;
+    height:1200px;
+}
+div[class="mbti-comment"] h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+div[class="mbti-result-content"]{
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    width:1320px;
+    height:900px;
+    text-align: center;
+}
+div[class="mbti-result-drink"] {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+div[class="mbti-result-drink"] img{
+    width:300px;
+    height:300px;
+}
+div[class="drink-rank"] span{
+    font-size:36px;
+    font-weight: bold;
+}
+div[class="drink-name"]{
+    margin-bottom:20px;
+}
+
+/* 음식 */
+div[class="mbti-result-food"]{
+    width:660px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.drink-food-first, .drink-food-second, .drink-food-third{
+    margin-top:70px;
+}
+
+div[class="mbti-result-food"] img{
+    width:300px;
+    height:300px;
+}

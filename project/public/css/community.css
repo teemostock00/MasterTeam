@@ -1,0 +1,83 @@
+a{
+  color:black !important;
+}
+
+
+a:hover, a:focus{
+  text-decoration: none;
+  color:#a33333;
+  outline:none !important;
+}
+
+
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.blog-entry{
+  background-color:white;
+  margin-bottom: 30px;
+  height:400px;
+}
+
+.hero-wrap{
+  padding-top:3em;
+  padding-bottom: 3em;
+}
+
+
+.ftco-section{
+  margin:0 auto 0 auto;
+  padding:3em 0;
+  position:relative;
+  height:100%;
+}
+
+
+/* 아래 페이지 버튼 */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
+
+.block-27 ul {
+  padding: 0;
+  margin: 0; }
+
+.block-27 ul li {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 400; }
+
+.block-27 ul li a, .block-27 ul li span {
+  border: 1px solid #a33333;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%; }
+
+.block-27 ul li.active a, .block-27 ul li.active span {
+  background: #a33333;
+  color: #fff;
+  border: 1px solid transparent; }
+
+.block-27 a{
+  color:#a33333 !important;
+  font-weight: 400;
+  font-size:20px;
+}
+
+
+

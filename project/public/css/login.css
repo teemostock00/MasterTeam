@@ -1,0 +1,163 @@
+body{
+    display:flex;
+    flex-direction: row;
+}
+
+.login-left{
+    width:50%;
+}
+.login-photo{
+    float:right;
+}
+
+.login-photo img{
+    height: 710px;
+    width: 450px;
+    border: #EFEFEF solid 2px;
+    margin: 100px auto 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    height: 600px;
+    width: 450px;
+    padding-top:50px;
+    border: #EFEFEF solid 2px;
+    margin: 100px auto 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.logo img{
+    width:100px;
+    height:100px;
+}
+
+input {
+    height: 45px;
+    width: 300px;
+    margin-bottom: 10px;
+    background-color:#FAFAFA;
+    border: #EFEFEF 1px solid;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.login_btn {
+    width: 300px;
+    height: 35px;
+    border-radius: 6px;
+    border: white;
+    margin-bottom: 100px;
+    background-color: #A33333;
+    opacity: 0.5;
+    color: white;
+    font-size: 17px;
+}
+
+.login_btn:hover {
+    cursor: pointer;
+    background-color: #A33333;
+    opacity: 1;
+}
+
+
+/* 소셜로그인 */
+
+.social-login{
+    display: flex;
+    justify-content: center;
+}
+.leftHr {
+    float:left;
+    width:30%;
+    box-sizing: border-box;
+}
+
+.social-login .social-text{
+    float:left;
+    width:28%;
+    margin:2px 5%;
+    font-size: 13px;
+    box-sizing: border-box;
+    color: #43191E;
+    font-size: 18px;
+    font-weight: 700;
+    margin:0px 15px;
+}
+
+.google-login{
+
+}
+
+.rightHr {
+    float: right;
+    width:30%;
+    box-sizing: border-box;
+}
+.social-menu{
+    display: flex;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social li{
+    margin-left:15px;
+    margin-right:15px;
+}
+.social li i{
+    font-size:1.5rem;
+    color:#A33333;
+}
+
+.social-footer a{
+    color: #A33333;
+    opacity: 0.5;
+    font-size:18px;
+}
+
+.social-footer a:hover{
+    color:#A33333;
+    opacity: 1;
+}
+
+.login-footer{
+    height: 100px;
+    width: 450px;
+    border: #EFEFEF solid 2px;
+    margin: 10px auto 50px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-footer-contents{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.login-footer-contents p{
+    font-size: 18px;
+}
+
+.login-footer-contents a{
+    margin-left:10px;
+    color:#A33333;
+    font-size: 20px;
+    font-weight: 700;
+}

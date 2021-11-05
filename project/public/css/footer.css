@@ -1,0 +1,28 @@
+
+footer {
+    background-color: #A33333;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 130px;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    font-size:32px;
+    font-family:"행복고흥M";
+}
+
+footer .footer-team{
+    margin-top: 20px;
+    color: #fff;
+}
+
+footer .footer-member {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size:20px;
+    opacity: 0.5;
+    transition: all .5s;
+}

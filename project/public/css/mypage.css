@@ -1,0 +1,240 @@
+.contents{
+    width:1320px;
+    margin:0 auto;
+}
+
+.container-scroller{
+    display: flex;
+    overflow: hidden;
+    height:690px;
+}
+
+.slider{
+    min-height:calc(100vh - 60px);
+    background-color:#ffffff;
+    padding:0;
+    width:260px;
+    z-index: 11;
+    border-right:1px solid #e4e9f0;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+}
+
+.slider .nav{
+    overflow:hidden;
+    flex-wrap:nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-bottom:60px;
+    width:inherit;
+}
+
+.slider .nav .nav-item{
+    padding: 0 2.25rem;
+    transition-duration: 0.25s;
+    -webkit-transition-property: background;
+}
+
+/* 선택 된 경우 */
+
+.slider .nav .active{
+    background-color:#a33333;
+}
+
+.slider .nav .active span{
+    color:white;
+}
+
+.border-bottom{
+    border-bottom:1px solid #e4e9f0 !important;
+}
+
+.border-bottom .nav-profile-image{
+    width:100px;
+    height:100px;
+    margin:auto;
+    box-shadow:none;
+    border: 1px solid #e4e9f0;
+    border-radius: 50px;
+}
+
+.border-bottom .nav-profile-image img{
+    margin-left:15px;
+    margin-top:15px;
+    width:64px;
+    height:64px;
+    vertical-align: middle;
+}
+
+.slider .nav .nav-item .nav-profile-text{
+
+}
+
+.page-body-wrapper{
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    padding-left:0;
+    padding-right:0;
+    overflow:auto;
+}
+
+.main-panel{
+    transition:width 0.25s ease, margin 0.25s ease;
+    width:100%;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+}
+
+.content-wrapper{
+    padding:25px 27px;
+    width:100%;
+    -webkit-box-flex:1;
+    flex-grow:1;
+}
+
+.page-body-wrapper{
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    padding-left:0;
+    padding-right:0;
+}
+.page-body-wrapper .row{
+    padding-bottom:20px;
+}
+.page-body-wrapper .row .card{
+    border:none !important;
+    opacity: 0.7;
+}
+
+.page-body-wrapper .row .card:hover{
+    border:none !important;
+    opacity: 1;
+}
+
+.page-body-wrapper .row .card img{
+    height: 250px;
+    border-radius: 20px;
+}
+
+/* 스크롤바 */
+.page-body-wrapper::-webkit-scrollbar{
+    width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.page-body-wrapper::-webkit-scrollbar-thumb{
+    height: 17%;
+    background-color: #a33333;
+    border-radius: 10px;
+}
+
+/* 스크롤바 뒷 배경 설정*/
+.page-body-wrapper::-webkit-scrollbar-track{
+    background-color: rgba(184, 54, 54, 0.33);
+}
+
+/* 회원정보 수정 */
+.join-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form div{
+    margin-bottom: 20px;
+}
+
+.join-text{
+    padding-top:5px;
+    padding-bottom:20px;
+}
+.join-text p{
+    float:center;
+    margin:2px 5%;
+    font-size: 30px;
+    box-sizing: border-box;
+    color: #43191E;
+    font-weight: 700;
+    margin:0px 15px;
+}
+
+.login-laguage{
+    float:right;
+}
+
+.select-box{
+    height: 45px;
+    width: 800px;
+    margin-bottom: 10px;
+    background-color:#FAFAFA;
+    border: #EFEFEF 1px solid;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.join-form .nav-profile-image{
+    width:100px;
+    height:100px;
+    margin:0 auto 20px auto;
+    box-shadow:none;
+    border: 1px solid #e4e9f0;
+    border-radius: 50px;
+}
+
+.join-form .nav-profile-image img{
+    margin-top:10px;
+    width:64px;
+    height:64px;
+    vertical-align: middle;
+}
+
+input {
+    height: 45px;
+    width: 800px;
+    margin-bottom: 10px;
+    background-color:#FAFAFA;
+    border: #EFEFEF 1px solid;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* 버튼 */
+/* 로그인 버튼 */
+
+.join-button{
+    margin-top:10px;
+    height:50px;
+}
+
+.login_btn {
+    width: 300px;
+    height: 35px;
+    border-radius: 6px;
+    border: white;
+    margin-bottom: 100px;
+    background-color: #A33333;
+    opacity: 0.5;
+    color: white;
+    font-size: 17px;
+}
+
+.login_btn:hover {
+    cursor: pointer;
+    background-color: #A33333;
+    opacity: 1;
+}
+
+
+footer{
+    bottom:0;
+}
+

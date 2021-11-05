@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/map.css">
+    <title>Road</title>
+</head>
+
+<body>
+    <!---------------------------------- 헤더 ---------------------------------->
+    <header><%-include('header.ejs')-%></header>
+
+    <!---------------------------------- 게시글 상세보기 모달창 ---------------------------------->
+    <div id="myModal" class="modal">
+        <div class="modal-main">
+            <div class="modal-title">
+                    <span class="m-title">
+                        Upload a picture of the food you want to eat
+                    </span>
+                <button type="button" class="close" onclick="close_pop()">
+                    <span class="close-i"><i class="fas fa-times fa-fw" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="modal-upload">
+                <div class="image-upload-wrap">
+                    <input type="file" id="image-input" class="hidden-input" accept="image/*" onchange="readURL(this)">
+                    <button class="browse-btn">Food Photo Upload</button>
+                </div>
+                <div class="file-upload-content">
+                    <div class="img-size">
+                        <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+                    </div>
+                    <div id = "resultUplaoadPath" class="image-title-wrap">
+                        <p class="image-title"></p>
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-submit">
+                <button class ="m-submit" type="submit" onclick="predict()">전송하기</button>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------- 게시글 상세보기 모달창 ---------------------------------->
+
+    <!-- 메뉴 -->
+    <div data-include-path="header.html"></div>
+
+    <div class="map-content">
+        <div class="map"></div>
+        <div class="map-content-left" id="map-content-left">
+            <input type="checkbox" id="map-content-left-btn">
+            <label for="map-content-left-btn" class="map-cotent-left-btn-ya">
+                <span><i class="bi bi-chevron-left"></i></span>
+            </label>
+            <div class="map-content-left-content">
+                <!-- 결과 -->
+                <div class="predict-result" id="label-container"></div>
+<!--         id main pic       src에 food_img-->
+                <div class="map-content-photo"><img id="main_pic" src=""></div>
+                <!--음식설명-->
+                <div class="food-content"></div>
+                <div class="restaurant-title">Recommended restaurants</div>
+                <div class="restaurant">
+                    <input type="checkbox" id="restaurant-content-btn">
+                    <label for="restaurant-content-btn">
+                        <div class="restaurant-content">
+                            <div class="restaurant-content-img"><img src="https://lh5.googleusercontent.com/p/AF1QipNuB4vPM8W9ckzwEifRp0KpccPFLHhqDsUEmuaT=w1080-k-no"></div>
+                            <div class="restaurant-content-restname">나주곰탕하얀집 운암점</div>
+                            <div class="restaurant-content-restaddr">광주 북구 운암동 1051-8</div>
+                            <div>
+                                <div class="restaurant-content-resttel">0507-1336-2762</div>
+                                <div class="restaurant-content-restscore">4.4</div>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="restaurant-content-detail">
+                        <div class="restaurant-content-img"><img src="https://lh5.googleusercontent.com/p/AF1QipNuB4vPM8W9ckzwEifRp0KpccPFLHhqDsUEmuaT=w1080-k-no"></div>
+                        <div class="tag-content">
+                            <input type="radio" name="tabmenu" id="tab01" checked>
+                            <label for="tab01">홈</label>
+                            <input type="radio" name="tabmenu" id="tab02">
+                            <label for="tab02">메뉴</label>
+                            <input type="radio" name="tabmenu" id="tab03">
+                            <label for="tab03">리뷰</label>
+
+                            <div class="conbox con1">
+                                <div class="restaurant-content-name">나주곰탕하얀집 운암점</div>
+                                <div class="restaurant-content-addr">
+                                    <i class="bi bi-shop"></i>
+                                    <span>광주 북구 운암동 1051-8</span>
+                                </div>
+                                <div class="restaurant-content-tel">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>0507-1336-2762</span>
+                                </div>
+                                <div class="restaurant-content-time">
+                                    <i class="bi bi-clock"></i>
+                                    <span>10:00 - 21:00</span>
+                                </div>
+                                <div class="restaurant-content-score">
+                                    <i class="bi bi-star"></i>
+                                    <span>4.4</span>
+                                </div>
+                            </div>
+                            <div class="conbox con2">
+                                <div class="menu">
+                                    <div class="menu1">Beef Bone Soup
+                                        <span>9000원</span>
+                                    </div>
+                                    <div class="menu2">Boiled Beef/Pork Slices
+                                        <span>12000원</span>
+                                    </div>
+                                    <div class="menu3">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conbox con3">
+                                <div class="review">
+                                    <div class="review-score">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                        <span>4.4</span>
+                                    </div>
+                                    <div class="review-write"><span>review write </span><button>write</button></div>
+                                    <div class="review-content">
+                                        <div class="review-content1">
+                                            <img src="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 두번째.. 반복해야하는데 보여주기 식이니까 일단 만듬 -->
+                    <div class="restaurant-content">
+                        <div class="restaurant-content-img"><img src="https://fastly.4sqi.net/img/general/600x600/46722351_-CbaVeAkfxznh-nszMhETBbvRn6C7muWDx1lAp6Nlg8.jpg"></div>
+                        <div class="restaurant-content-restname">새물 문흥골 곰탕</div>
+                        <div class="restaurant-content-restaddr">광주 북구 문흥동 257-17</div>
+                        <div>
+                            <div class="restaurant-content-resttel">062-267-2133</div>
+                            <div class="restaurant-content-restscore">4.3</div>
+                        </div>
+                    </div>
+                    <div class="restaurant-content">
+                        <div class="restaurant-content-img"><img src="https://t1.daumcdn.net/cfile/tistory/245FC73653C5F88814"></div>
+                        <div class="restaurant-content-restname">오복식당</div>
+                        <div class="restaurant-content-restaddr">광주 동구 산수동 522-8</div>
+                        <div>
+                            <div class="restaurant-content-resttel">062-223-1579</div>
+                            <div class="restaurant-content-restscore">4.0</div>
+                        </div>
+                    </div>
+                    <div class="restaurant-content">
+                        <div class="restaurant-content-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg8aRARq5Cc57Zic3rF3_hT0yolZlN4zgU4Q&usqp=CAU"></div>
+                        <div class="restaurant-content-restname">본가나주곰탕</div>
+                        <div class="restaurant-content-restaddr">광주 북구 일곡동 876-3</div>
+                        <div>
+                            <div class="restaurant-content-resttel">062-571-0180</div>
+                            <div class="restaurant-content-restscore">4.3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------- 푸터 ---------------------------------->
+    <footer><%-include('footer.ejs')-%></footer>
+
+
+
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL8p9j7Ox3DZIPCM1NO_7gC7xFqGTkpgE&region=KR"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/map.js" defer></script>
+
+</body>
+
+
+</html>

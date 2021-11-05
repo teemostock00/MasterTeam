@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI - first</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/defult.css">
+    <link rel="stylesheet" href="css/mbti.css">
+</head>
+
+
+<body>
+    <header>
+        <%- include('header.ejs') -%>
+    </header>
+
+    <!------------------------------------------ START---------------------------------->
+    <div class="mbti-result">
+        <form action="">
+            <div class="mbti-result-content">
+                <div class="mbti-result-drink">
+                    <div class="mbti-comment">
+                        <h1>Outstanding Recommendations</h1>
+                    </div>
+                    <div class="drink-first">
+                        <div class="drink-rank"><span>1</span></div>
+                        <div class="drink-img">
+                            <img src="http://img.danawa.com/prod_img/500000/667/291/img/5291667_1.jpg?shrink=330:330&_v=20180830143149">
+                        </div>
+                        <div class="drink-name">민속주 안동소주(Traditional Liquor, Andong Soju)</div>
+                    </div>
+                    <div class="drink-second">
+                        <div class="drink-rank"><span>2</span></div>
+                        <img src="https://img.khan.co.kr/news/2019/03/15/l_2019031601001604400147071.webp">
+                        <div class="drink-name">미소 생막걸리(Miso Rice Wine)</div>
+                    </div>
+                    <div class="drink-third">
+                        <div class="drink-rank"><span>3</span></div>
+                        <img src="http://img.danawa.com/prod_img/500000/553/290/img/5290553_1.jpg?shrink=500:500&_v=20180831171228">
+                        <div class="drink-name">왕피천을 품은 미소생막걸리(Wangpicheon version Miso Rice Wine)</div>
+                    </div>
+                </div>
+                <div class="mbti-result-food">
+                    <div class="mbti-comment">
+                        <h1>Food Matches with Korean Liquor</h1>
+                    </div>
+                    <div class="drink-food-first">
+                        <div class="drink-food-img">
+                            <img src="http://image.auction.co.kr/itemimage/1d/68/19/1d68197486.jpg">
+                        </div>
+                        <div class="drink-food-name">오리탕(Duck Soup)</div>
+                    </div>
+                    <div class="drink-food-second">
+                        <div class="drink-food-img">
+                            <img src="https://cdn.onul-hoi.com/631c8f_210913015420.jpg">
+                        </div>
+                        <div class="drink-food-name">한우육회(Korean Beef Tartare)</div>
+                    </div>
+                    <div class="drink-food-third">
+                        <div class="drink-food-img">
+                            <img src="https://w.namu.la/s/44684a4a2989af7e4475c7a53859bc19520e13a9ae9008cec625df2206244163daf430420dfa7fceb6d55c4f37d0d19783ff3904e543b65cecb3625c7113b36e14e9bae624e7f20177a0da71b531fdd23582591b33f4942ef200226b6fe8b1a9">
+                        </div>
+                        <div class="drink-food-name">보리밥(Barley Rice)</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!------------------------------------------- END ----------------------------------->
+
+    <!-- footer -->
+    <%- include('footer.ejs') -%>
+
+</body>
+<script src="../js/header-footer.js" defer type="text/javascript"></script>
+</html>

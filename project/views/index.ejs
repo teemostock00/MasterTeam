@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animated.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>로드</title>
+
+</head>
+<body>
+
+
+<header>
+    <%- include('header.ejs') -%>
+</header>
+
+
+    <!-- 슬라이드 -->
+    <div id="wrapper">
+        <div id="slider-wrap">
+            <ul id="slider">
+                <li>
+                    <img src="img/index/광주_무등산.png">
+                </li>
+
+                <li>
+                    <img src="img/index/전남_담양.png">
+                </li>
+
+                <li>
+                    <img src="img/index/전남_순천.png">
+                </li>
+
+                <li>
+                    <img src="img/index/전남_여수.png">
+                </li>
+            </ul>
+
+            <!-- 버튼 -->
+            <div class="btns" id="next"><i class="bi bi-arrow-right-short" style="font-size:2rem; color:#fff; opacity: 0.5;"></i></div>
+            <div class="btns" id="previous"><i class="bi bi-arrow-left-short" style="font-size:2rem; color:#fff; opacity: 0.5;"></i></div>
+
+
+            <div id="pagination-wrap">
+                <ul>
+                </ul>
+            </div>
+            <!--controls-->
+
+        </div>
+
+    </div>
+    <div class="contents">
+    <!-- 두번째 컨텐츠 -->
+    <div class="second-contents">
+        <div class="second-contents-left col-lg-3">
+            <div class="second-contents-title">
+                <p>WELCOME TO</p>
+                <p><span class="gangju">GANGJU</span> and</p>
+                <p><span class="jeolla-do">JEOLLA-DO</span></p>
+            </div>
+            <div class="secont-contents-text">
+            <span>Special food experence for travelers new to korea</span>
+        </div>
+        </div>
+        <div id="portfolio" class="our-portfolio section col-lg-9">
+            <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="loop owl-carousel">
+                            <div class="item">
+                                <a href="#">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src=".img/index/budaejjigae.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <span>budaejjigae, made with ham and sausage, is easily the most liked stew among foreigners.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="img/index/gimbap.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <span>Gimbap is made using rice seasoned with vinegar, sugar and salt. The rice is then placed on...</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="img/index/kimchijjigae.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <span>One of the most beloved Korean food among Koreans is kimchi jjigae, a stew that uses... </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="img/index/samgyeopsal.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <span>Samgyeopsal is so popular, it could be considered the national food of Korea. </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="img/index/tteokbokki.jpg" alt="">
+                                        </div>
+                                        <div class="down-content">
+                                            <span>Tteokbokki is one of the most common food items sold by street vendors.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+    <!-- 추천 서비스 -->
+    <div class="recommend">
+        <div class="recommend-title">
+            <h2>
+                Recommendations for Korean Traditional Drinks
+            </h2>
+        </div>
+        <!-- 태그 -->
+        <div class="hastage">
+            <div class="line1">
+                <button type="button" class="hastage-gwang">#Donggu</button>
+                <button type="button" class="hastage-gwang">#Seogu</button>
+                <button type="button" class="hastage-gwang">#Bukgu</button>
+                <button type="button" class="hastage-gwang">#Namgu</button>
+                <button type="button" class="hastage-gwang">#Gwangsangu</button>
+                <br/>
+            </div>
+            <div class="line2">
+                <button type="button" class="hastage-jeolla">#Yeosu</button>
+                <button type="button" class="hastage-jeolla">#Gwangyang</button>
+                <button type="button" class="hastage-jeolla">#Suncheon</button>
+                <button type="button" class="hastage-jeolla">#Damyang</button>
+                <button type="button" class="hastage-jeolla">#Hwasun</button>
+            </div>
+        </div>
+        <!-- 추천사이트 내용 -->
+        <div class="recommend-contents">
+            <div class="recommend-contents-wrapper" id="curationlist">
+                <div class="recommend-contents-slide" data-swiper-slide-index="0"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLBQKn6D1k6Nm3TF0ZSuRyJ16XU5HpQ9E4A&usqp=CAU"></div>
+                    <div class="down-content"><span>거목한정식</span><br/><p>광주 남구 구동 37-28</p></div>
+                </a></div>
+                <div class="recommend-contents-slide" data-swiper-slide-index="1"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbISyk3irLPd_jCb9GyeHdVrJbvrMJm_KGA&usqp=CAU"></div>
+                    <div class="down-content"><span>조선옥</span><br/><p>광주 남구 노대동 528-2</p></div>
+                </a></div>
+                <div class="recommend-contents-slide" data-swiper-slide-index="2"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38wA-mL0263Lq7v2jtJwO8pW0AdSFo0c8Cw&usqp=CAU"></div>
+                    <div class="down-content"><span>세자매해물칼국수</span><br/><p>광주 남구 방림동 543-1</p></div>
+                </a></div>
+                <div class="recommend-contents-slide" data-swiper-slide-index="3"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhpQEQtwMmokx-0u-j2resUXbAwLJMYucxJg&usqp=CAU"></div>
+                    <div class="down-content"><span>광주곱창</span><br/><p>광주 남구 봉선동 1014-8</p></div>
+                </a></div>
+            </div>
+        </div>
+        <!-- 만들고 싶었던 슬라이드 -->
+        <div class="owl-nav disabled">
+            <button type="button" role="presentation" class="owl-prev">
+                <span aria-label="Previous">‹</span>
+            </button>
+            <button type="button" role="presentation" class="owl-next">
+                <span aria-label="Next">›</span>
+            </button>
+
+        </div>
+
+        <!--
+        <div class="page">
+            <div class="recommend-contentsbar">
+                <button type="button" onclick="" class="btn-prev"><span class="ico">pre</span></button>
+                <div class="recommend-pagenume"><strong>1</strong>/<span>10</span></div>
+                <button type="button" onclick="" class="btn-next"><span class="ico">nex</span></button>
+            </div>
+        </div>
+        -->
+    </div>
+<div class="line"></div>
+    <!-- 체험속으로  -->
+    <div class="box-calendar">
+        <div class="calendar-top">
+            <button type="button" onclick="setNewCalendar(-1);" class="btn-prev"><span class="ico">‹</span></button>
+            <div class="title">
+                <p><img src="" class="ico">Nov, K-Cultural Experiences</p>
+            </div>
+            <button type="button" onclick="setNewCalendar(1);" class="btn-next"><span class="ico">›</span></button>
+            <a href="" class="btn-more">more</a>
+        </div>
+        <div class="calendar">
+            <table>
+                <tbody id="calendarUi">
+                    <tr>
+                        <td><button type="button" id="1">1</button></td>
+                        <td><button type="button" id="2">2</button></td>
+                        <td><button type="button" id="3">3</button></td>
+                        <td><button type="button" id="4">4</button></td>
+                        <td><button type="button" id="5">5</button></td>
+                        <td><button type="button" class="saturday" id="6">6</button></td>
+                        <td><button type="button" class="sunday" id="7">7</button></td>
+                        <td><button type="button" id="8">8</button></td>
+                        <td><button type="button" id="9">9</button></td>
+                        <td><button type="button" id="10">10</button></td>
+                        <td><button type="button" id="11">11</button></td>
+                        <td><button type="button" id="12">12</button></td>
+                        <td><button type="button" class="saturday" id="13">13</button></td>
+                        <td><button type="button" class="sunday"id="14">14</button></td>
+                        <td><button type="button" id="15">15</button></td>
+                        <td><button type="button" id="16">16</button></td>
+                        <td><button type="button" id="17">17</button></td>
+                        <td><button type="button" id="18">18</button></td>
+                        <td><button type="button" id="19">19</button></td>
+                        <td><button type="button" class="saturday" id="20">20</button></td>
+                        <td><button type="button" class="sunday"id="21">21</button></td>
+                        <td><button type="button" id="22">22</button></td>
+                        <td><button type="button" id="23">23</button></td>
+                        <td><button type="button" id="24">24</button></td>
+                        <td><button type="button" id="25">25</button></td>
+                        <td><button type="button" id="26">26</button></td>
+                        <td><button type="button" class="saturday" id="27">27</button></td>
+                        <td><button type="button" class="sunday"id="28">28</button></td>
+                        <td><button type="button" id="29">29</button></td>
+                        <td><button type="button" id="30">30</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="calendar-list">
+            <ul class="list-calData">
+                <li><a href="#" onclick="" title="">
+                    <span class="calendar-img"><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMTBfMjAy%2FMDAxNjA3NTg4ODY4NDc1.mzAsLYmnBqMeXHdKdNc1PBIJHlxnSzYHQb17COsJ4pwg.MQ4kYIpsR4u-Q7G5DBts2SqV3-mDPcdwZMA3aWdfTGIg.JPEG.yeogiyou%2F1.jpg&type=sc960_832"></span>
+                    <em>2021.03.01. - 2021.12.31. </em><br />
+                    <strong>Jindo Saturday Folklore Tour</strong>
+                    <span></span>
+                </a></li>
+                <li><a href="#" onclick="" title="">
+                    <span class="calendar-img"><img src="https://www.acc.go.kr/resources/upload/1228/20211014161248_1246632832.gif"></span>
+                    <em>2021.08.13. - 2021.11.14.</em><br />
+                    <strong>Adorable big brother </strong>
+                    <span></span>
+                </a></li>
+                <li><a href="#" onclick="" title="">
+                    <span class="calendar-img"><img src="https://www.acc.go.kr/resources/upload/1228/20211014164029_759362720.gif"></span>
+                    <em>2021.08.18. - 2021.11.14.</em><br/>
+                    <strong>2021 Atrts & Creative Technology Showcase</strong>
+                    <span></span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 여행지 사진 추천 -->
+    <div class="activity">
+        <div class="activity-top">
+            <p>Photos for Sightseeing</p>
+        </div>
+        <div class="area-left">
+            <div class="article">
+                <div class="mdu-imgTitle">
+                    <div class="imgView"><a href=""><img src="../img/index/관광지1.jpg"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="area-mid">
+            <div class="article">
+                <div class="mdu-imgTitle">
+                    <div class="imgView"><a href=""><img src="../img/index/관광지2.jpg"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="area-right">
+            <div class="article">
+                <div class="mdu-imgTitle">
+                    <div class="imgView"><a href=""><img src="../img/index/관광지3.jpg"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- footer -->
+    <%- include('footer.ejs') -%>
+
+</body>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js" defer type="text/javascript"></script>
+<script src="js/header-footer.js" defer type="text/javascript"></script>
+<script src="js/custom.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/owl-carousel.js"></script>
+
+
+
+
+</html>

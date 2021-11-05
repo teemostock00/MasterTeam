@@ -1,0 +1,16 @@
+/* 폰트 적용 */
+@font-face{
+    font-family: '행복고흥M';
+    src: url('../font/행복고흥M.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face{
+    font-family: '행복고흥B';
+    src: url('../font/행복고흥B.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face{
+    font-family: '정속언해M';
+    src: url('../font/ON 정속언해R.ttf') format('truetype');
+    font-style: normal;
+}
