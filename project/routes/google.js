@@ -14,9 +14,9 @@ const client = new OAuth2Client(CLIENT_ID);
 
 // <--                                 구글 로그인 start                                  -->
 // login.ejs 렌더링
-router.get('/login', (req, res) => {
+router.get('/social_login', (req, res) => {
     res.render('login')
-    console.log('login');
+    console.log('google login');
 });
 router.post('/login', (req, res) => {
     let token = req.body.token;
@@ -41,9 +41,12 @@ router.post('/login', (req, res) => {
             res.send('success');
         }).catch(console.error);
 });
-router.get('/index', (req, res) => {
+
+// 원래 join 이었음
+router.get('/social_join', (req, res) => {
     let user = req.user;
-    res.render('index', {user});
+    // res.render('join', {user});
+    res.render('social_join', {user});
 });
 // app.get('/protectedroute', (req, res) => {
 //     res.render('protectedroute');

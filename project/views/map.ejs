@@ -20,7 +20,7 @@
 
 <body>
     <!---------------------------------- 헤더 ---------------------------------->
-    <header><%-include('header.ejs')-%></header>
+    <header><%-include('./partials/header.ejs')-%></header>
 
     <!---------------------------------- 게시글 상세보기 모달창 ---------------------------------->
     <div id="myModal" class="modal">
@@ -68,7 +68,7 @@
             <div class="map-content-left-content">
                 <!-- 결과 -->
                 <div class="predict-result" id="label-container"></div>
-<!--         id main pic       src에 food_img-->
+<!--         id main pic src에 food_img-->
                 <div class="map-content-photo"><img id="main_pic" src=""></div>
                 <!--음식설명-->
                 <div class="food-content"></div>
@@ -179,7 +179,7 @@
     </div>
 
     <!---------------------------------- 푸터 ---------------------------------->
-    <footer><%-include('footer.ejs')-%></footer>
+    <footer><%-include('./partials/footer.ejs')-%></footer>
 
 
 

@@ -12,11 +12,10 @@
         <!-- Bootstrap icon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/animated.css">
-        <link rel="stylesheet" href="css/owl.css">
-        <link rel="stylesheet" href="css/login.css">
 
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/font.css">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <title>Login</title>
 </head>
@@ -31,7 +30,10 @@
         <main>
             <div class="logo"><a href="views/introduction.ejs"><img src="img/logo.png"></a></div>
             <article>
-                <form action="/index" method="post">
+
+<!--      로그인 전송          -->
+<!--                <form action="/login" method="post">-->
+
                 <div class="login_id">
                     <input type="text" placeholder="ID" class="idValue" name="id">
                 </div>
@@ -39,10 +41,12 @@
                     <input type="password" placeholder="PW" class="passwordValue" name="password">
                 </div>
                 <div>
-                    <button class="login_btn">LOGIN</button>
+                    <button class="login_btn"><a href = "index">LOGIN</a></button>
                 </div>
-                </form>>
+<!--                </form>>-->
+
             </article>
+
             <div class="social-login">
                 <hr class="leftHr">
                 <div class="social-text">SOCIAL LOGIN</div>
@@ -51,7 +55,10 @@
             <div class="social-menu">
                 <ul class="social">
                     <li><i class="bi bi-facebook"></i></li>
+
+<!--           구글로그인 버튼         -->
                         <div class="g-signin2 google-login" data-onsuccess="onSignIn"></div>
+
                     <li><i class="bi bi-twitter"></i></li>
                 </ul>
 
@@ -64,7 +71,7 @@
         <div class="login-footer">
             <div class="login-footer-contents">
                 <p>Don't you have an account?</p>
-                <a href="views/join.ejs">JOIN</a>
+                <a href="join">JOIN</a>
             </div>
         </div>
     </div>
@@ -100,7 +107,7 @@
             console.log('Signed in as: ' + xhr.responseText);
             if(xhr.responseText == 'success'){
                 signOut();
-                location.assign('/register')
+                location.assign('/social_join')
             }
         };
         xhr.send(JSON.stringify({token : id_token}));

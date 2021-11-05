@@ -48,6 +48,8 @@ router.post('/sign-up', userMiddleware.validateRegister, (req, res, next) => {
                                 })
                             }
                         );
+
+                        // res.redirect('/join')
                     }
                 });
             }

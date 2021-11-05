@@ -14,3 +14,10 @@
     src: url('../font/ON 정속언해R.ttf') format('truetype');
     font-style: normal;
 }
+
+@font-face {
+    font-family: '정속언해M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/OTJeongsogeonhaeRA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

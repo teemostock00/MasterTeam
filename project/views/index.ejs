@@ -21,30 +21,28 @@
 </head>
 <body>
 
-
 <header>
-    <%- include('header.ejs') -%>
+    <%- include('./partials/header.ejs') -%>
 </header>
-
 
     <!-- 슬라이드 -->
     <div id="wrapper">
         <div id="slider-wrap">
             <ul id="slider">
                 <li>
-                    <img src="img/index/광주_무등산.png">
+                    <img src="../img/index/광주_무등산.png">
                 </li>
 
                 <li>
-                    <img src="img/index/전남_담양.png">
+                    <img src="../img/index/전남_담양.png">
                 </li>
 
                 <li>
-                    <img src="img/index/전남_순천.png">
+                    <img src="../img/index/전남_순천.png">
                 </li>
 
                 <li>
-                    <img src="img/index/전남_여수.png">
+                    <img src="../img/index/전남_여수.png">
                 </li>
             </ul>
 
@@ -84,7 +82,7 @@
                                 <a href="#">
                                     <div class="portfolio-item">
                                         <div class="thumb">
-                                            <img src=".img/index/budaejjigae.jpg" alt="">
+                                            <img src="../img/index/budaejjigae.jpg" alt="">
                                         </div>
                                         <div class="down-content">
                                             <span>budaejjigae, made with ham and sausage, is easily the most liked stew among foreigners.
@@ -97,7 +95,7 @@
                                 <a href="#">
                                     <div class="portfolio-item">
                                         <div class="thumb">
-                                            <img src="img/index/gimbap.jpg" alt="">
+                                            <img src="../img/index/gimbap.jpg" alt="">
                                         </div>
                                         <div class="down-content">
                                             <span>Gimbap is made using rice seasoned with vinegar, sugar and salt. The rice is then placed on...</span>
@@ -109,7 +107,7 @@
                                 <a href="#">
                                     <div class="portfolio-item">
                                         <div class="thumb">
-                                            <img src="img/index/kimchijjigae.jpg" alt="">
+                                            <img src="../img/index/kimchijjigae.jpg" alt="">
                                         </div>
                                         <div class="down-content">
                                             <span>One of the most beloved Korean food among Koreans is kimchi jjigae, a stew that uses... </span>
@@ -121,7 +119,7 @@
                                 <a href="#">
                                     <div class="portfolio-item">
                                         <div class="thumb">
-                                            <img src="img/index/samgyeopsal.jpg" alt="">
+                                            <img src="../img/index/samgyeopsal.jpg" alt="">
                                         </div>
                                         <div class="down-content">
                                             <span>Samgyeopsal is so popular, it could be considered the national food of Korea. </span>
@@ -133,7 +131,7 @@
                                 <a href="#">
                                     <div class="portfolio-item">
                                         <div class="thumb">
-                                            <img src="img/index/tteokbokki.jpg" alt="">
+                                            <img src="../img/index/tteokbokki.jpg" alt="">
                                         </div>
                                         <div class="down-content">
                                             <span>Tteokbokki is one of the most common food items sold by street vendors.</span>
@@ -318,8 +316,9 @@
     </div>
 
     </div>
-    <!-- footer -->
-    <%- include('footer.ejs') -%>
+
+<!-- footer -->
+<%- include('./partials/footer.ejs') -%>
 
 </body>
 
